@@ -164,13 +164,13 @@ hr {
     border: 3px solid #0f620f;
     color: #0f620f;
     font-size: 40px;
-    animation: starRotate 2.5s linear infinite;
+    animation: rotation 2.5s linear infinite;
     /* display: grid;
     place-items: center;
     place-content: center; */
 }
 
-@keyframes starRotate {
+@keyframes rotation {
     0% {
         transform: rotate(0deg);
     }
