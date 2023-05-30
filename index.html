@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fav.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header-section">
+        <img src="pw-logo.png" class="logo">
+        <nav>
+            <ul class="nav-ul">
+                <li>Dashboard</li>
+                <li>Courses</li>
+                <li>PW Skills Lab</li>
+                <li>Job Portal</li>
+                <li>Experience Portal</li>
+                <li>Become an affiliate</li>
+                <li>Hall of Fame</li>
+            </ul>
+        </nav>
+        <div class="my-account">
+            <div class="my-account-li">
+                <li><i class="fa-solid fa-book"></i>My Courses</li>
+                <li><i class="fa-solid fa-user"></i>My Profile</li>
+                <li><i class="fa-solid fa-right-from-bracket"></i>Logout</li>
+            </div>
+            <li>Deepak Kumar Chaudhary <span>&#9660;</span></li>
+            <img src="Deepak.jpg">
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <div class="main">
+        <h2>Database quiz</h2>
+        <p id="score">Score</p>
+    </div>
+    <hr>
+
+    <!-- Questions Section-->
+    <div id="questions-el"></div>
+
+    <!-- Submit Button -->
+    <button id="submit">Submit</button>
+
+    <!-- Quiz Score pop up box -->
+    <div id="score-container">
+        <div id="score-closing">
+            <h3>Quiz Score</h3>
+            <span id="score-box-close">X</span>
+        </div>
+        <div class="score-box">
+            <div class="ring"><div class="ring"></div></div>
+            <h2 id="correct-symbol">✔</h2>
+            <p id="score-obtained">You scored 24 out of 25</p>
+        </div>
+    </div>
+
+    <!-- Linking External JS -->
+    <script src="script.js"></script>
+
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/5ad84bde35.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
