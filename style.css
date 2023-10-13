@@ -66,10 +66,6 @@
     margin-right: 13px;
 }
 
-/* .my-account-li li:hover{
-    background-color: #d1d0d0;
-} */
-
 /* Main Section */
 .main {
     display: flex;
@@ -138,7 +134,7 @@ hr {
     box-shadow: 0 0 5px black;
     transform: translate(160%, -150%);
     background-color: #fff;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     display: none;
 }
 
@@ -165,9 +161,6 @@ hr {
     color: #0f620f;
     font-size: 40px;
     animation: rotation 2.5s linear infinite;
-    /* display: grid;
-    place-items: center;
-    place-content: center; */
 }
 
 @keyframes rotation {

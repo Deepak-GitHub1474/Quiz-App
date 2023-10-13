@@ -74,8 +74,10 @@ function buildQuiz() {
 buildQuiz();
 
 submitBtn.addEventListener("click", () => {
+    submitBtn.disabled = true
+    submitBtn.style.opacity = "0.7"
+    submitBtn.style.cursor = "not-allowed"
     let score = 0;
-
     myQuestions.forEach((currentQuestion, questionNumber) => {
         let selectedOption = document.querySelector(`input[name="option${questionNumber}"]:checked`);
         let selectedAnswer = selectedOption ? selectedOption.value : null;      // selectedOption ? means it is checked or not
