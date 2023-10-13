@@ -133,3 +133,23 @@ myAccount.addEventListener("mouseover", () => {
 myAccount.addEventListener("mouseout", () => {
     myAccountItem.style.visibility = "hidden";
 });
+
+
+
+function toggleNav() {
+    const nav2 = document.querySelector(".nav-ul2");
+    const hamburger = document.getElementById("hamburger");
+    const cross = document.getElementById("cross");
+
+    if (nav2.style.display === "none" || nav2.style.display === "") {
+        nav2.style.display = "flex";
+        nav2.style.flexDirection = "column";
+        hamburger.style.display = "none";
+        cross.style.display = "block";
+    } else {
+        nav2.style.display = "none";
+        hamburger.style.display = "block";
+        cross.style.display = "none";
+    }
+}
+

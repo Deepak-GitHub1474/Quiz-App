@@ -11,37 +11,68 @@
 </head>
 
 <body>
+
     <!-- Header Section -->
-    <header class="header-section">
-        <img src="pw-logo.png" class="logo">
-        <nav>
-            <ul class="nav-ul">
-                <li>Dashboard</li>
-                <li>Courses</li>
-                <li>PW Skills Lab</li>
-                <li>Job Portal</li>
-                <li>Experience Portal</li>
-                <li>Become an affiliate</li>
-                <li>Hall of Fame</li>
-            </ul>
-        </nav>
-        <div class="my-account">
-            <div class="my-account-li">
-                <li><i class="fa-solid fa-book"></i>My Courses</li>
-                <li><i class="fa-solid fa-user"></i>My Profile</li>
-                <li><i class="fa-solid fa-right-from-bracket"></i>Logout</li>
-            </div>
-            <li>Deepak Kumar Chaudhary <span>&#9660;</span></li>
+<header class="header-section">
+   <div class="header-top">
+    <img src="pw-logo.png" class="logo">
+    <nav>
+        <ul class="nav-ul1">
+            <li>Dashboard</li>
+            <li>Courses</li>
+            <li>PW Skills Lab</li>
+            <li>Job Portal</li>
+            <li>Experience Portal</li>
+            <li>Become an affiliate</li>
+            <li>Hall of Fame</li>
+        </ul>
+    </nav>
+    
+    <div class="my-account">
+        <div class="my-account-li">
+            <li><i class="fa-solid fa-book"></i>My Courses</li>
+            <li><i class="fa-solid fa-user"></i>My Profile</li>
+            <li><i class="fa-solid fa-right-from-bracket"></i>Logout</li>
+        </div>
+        <div class="user-profile"> 
+            <span>Deepak Kumar Chaudhary<span>&#9660;</span></span>
             <img src="Deepak.jpg">
         </div>
-    </header>
+        
+    </div>
+   </div>
+
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="cross" id="cross" onclick="toggleNav()">
+        <div>X</div>
+    </div>
+
+    <nav>
+        <ul class="nav-ul2">
+            <li>Dashboard</li>
+            <li>Courses</li>
+            <li>PW Skills Lab</li>
+            <li>Job Portal</li>
+            <li>Experience Portal</li>
+            <li>Become an affiliate</li>
+            <li>Hall of Fame</li>
+        </ul>
+    </nav>
+</header>
+
 
     <!-- Main Section -->
     <div class="main">
         <h2>Database quiz</h2>
         <p id="score">Score</p>
+        <hr>
     </div>
-    <hr>
+    
 
     <!-- Questions Section-->
     <div id="questions-el"></div>
